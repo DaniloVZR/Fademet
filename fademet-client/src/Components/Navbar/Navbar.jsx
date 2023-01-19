@@ -1,41 +1,43 @@
-import logo from "../../img/logo_fm.png";
-import { Link } from "react-router-dom"
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import Logo from "../Logo/Logo";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const [position, setPosition] = useState('relative');
+  let location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === '/') {
+      setPosition('absolute');
+    }
+  }, [location])
+
   return (
-    <div className="navbar">
+    <div className={`navbar ${position}`}>
       <Link to='/'>
-        <div className="navbar-logo">
-          <img className="navbar-logo__img" src={logo} alt="Logo" />
-          <h1 className="navbar-logo__text">FADEMET</h1>
-        </div>
+        <Logo />
       </Link>
       <div className="navbar-options">
         <Link to='/'>
+          {/* 
+          Anterior Diseño de Botón
           <div className="navbar-options__link">
             Inicio
-          </div>
+          </div> */}
+          <button class="button">Inicio</button>
         </Link>
         <Link to='/Servicios'>
-          <div className="navbar-options__link">
-            Servicios
-          </div>
+          <button class="button">Servicios</button>
         </Link>
         <Link to='/Trabajos'>
-          <div className="navbar-options__link">
-            Trabajos
-          </div>
+          <button class="button">Trabajos</button>
         </Link>
         <Link to='/QuienesSomos'>
-          <div className="navbar-options__link">
-            Quienes Somos
-          </div>
+          <button class="button">Nosotros</button>
         </Link>
         <Link to='/Contactanos'>
-          <div className="navbar-options__link">
-            Contáctanos
-          </div>
+          <button class="button">Contactanos</button>
         </Link>
       </div>
     </div >

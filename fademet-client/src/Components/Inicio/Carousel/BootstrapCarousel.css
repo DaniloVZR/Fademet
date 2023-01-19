@@ -1,10 +1,17 @@
+.Carousel {
+  position: absolute;
+  top: 0;
+  z-index: -99;
+}
+
 .img-container {
-  width: 550px;
-  height: 450px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .img-carousel {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  filter: brightness(60%);
 }
