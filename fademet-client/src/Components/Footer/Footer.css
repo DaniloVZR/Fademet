@@ -1,0 +1,43 @@
+p {
+  margin: 0;
+  padding: .3em 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: rgba(18, 18, 18, 0.90);
+  color: white;
+  padding: 2rem 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer-social {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-social__wpp {
+  color: green;
+}
+
+.footer-social__ig {
+  color: purple;
+}
+
+.copy {
+  margin: 0 auto;
+}

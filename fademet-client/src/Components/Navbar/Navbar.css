@@ -5,27 +5,46 @@ a {
 
 .navbar {
   display: flex;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(40, 40, 40);
+  background-color: rgba(18, 18, 18, 0.80);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  z-index: 99;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  background-color: rgba(18, 18, 18, 0.90);
+  position: relative;
 }
 
 .navbar-logo {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
+  transition: .6s;
 }
+
 
 .navbar-logo__img {
   margin: .5rem 0;
   width: 70px;
+  transform: rotate(0deg);
 }
 
 .navbar-logo__text {
   font-size: 2rem;
   font-family: 'Raleway', sans-serif;
   color: white;
+  transition: .6s;
+}
+
+.navbar-logo__text:hover {
+  letter-spacing: 5px;
 }
 
 .navbar-options {
@@ -53,4 +72,60 @@ a {
 .navbar-options__link:hover {
   color: #101010;
   background-color: #e5e5e5;
+}
+
+.button {
+  --color: rgb(255, 127, 55);
+  padding: 0.7em 1.7em;
+  background-color: transparent;
+  border-radius: 1em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s;
+  font-weight: 400;
+  font-size: 15px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+}
+
+.button::before,
+.button::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1.5s ease;
+}
+
+.button::before {
+  top: -1em;
+  left: -1em;
+}
+
+.button::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+
+.button:hover::before,
+.button:hover::after {
+  height: 410px;
+  width: 410px;
+}
+
+.button:hover {
+  color: rgb(10, 25, 30);
+}
+
+.button:active {
+  filter: brightness(.8);
 }
