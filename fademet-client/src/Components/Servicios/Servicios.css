@@ -1,5 +1,5 @@
-::-webkit-scrollbar-thumb {
-  background-color: red;
+::-webkit-scrollbar {
+  width: 0;
 }
 
 .servicios {

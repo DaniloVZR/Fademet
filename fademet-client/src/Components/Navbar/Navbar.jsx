@@ -25,19 +25,19 @@ const Navbar = (props) => {
           <div className="navbar-options__link">
             Inicio
           </div> */}
-          <button class="button">Inicio</button>
+          <button className="button">Inicio</button>
         </Link>
         <Link to='/Servicios'>
-          <button class="button">Servicios</button>
+          <button className="button">Servicios</button>
         </Link>
         <Link to='/Trabajos'>
-          <button class="button">Trabajos</button>
+          <button className="button">Trabajos</button>
         </Link>
         <Link to='/QuienesSomos'>
-          <button class="button">Nosotros</button>
+          <button className="button">Nosotros</button>
         </Link>
         <Link to='/Contactanos'>
-          <button class="button">Contactanos</button>
+          <button className="button">Contactanos</button>
         </Link>
       </div>
     </div >
