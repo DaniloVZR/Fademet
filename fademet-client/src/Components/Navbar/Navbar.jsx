@@ -20,15 +20,7 @@ const Navbar = (props) => {
       </Link>
       <div className="navbar-options">
         <Link to='/'>
-          {/* 
-          Anterior Diseño de Botón
-          <div className="navbar-options__link">
-            Inicio
-          </div> */}
           <button className="button">Inicio</button>
-        </Link>
-        <Link to='/Servicios'>
-          <button className="button">Servicios</button>
         </Link>
         <Link to='/Trabajos'>
           <button className="button">Trabajos</button>
