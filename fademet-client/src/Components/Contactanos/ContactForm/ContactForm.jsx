@@ -2,11 +2,15 @@ import { useState } from "react";
 import axios from "axios";
 
 const ContactForm = () => {
+
   const [contactForm, setcontactForm] = useState({
+    name: "",
     subject: "",
     email: "",
     message: "",
   });
+
+  const [messageForm, setMessageForm] = useState("");
 
   const handleContactForm = (e) => {
     const { name, value } = e.target;
@@ -17,13 +21,25 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(contactForm);
+    if (contactForm.name === "") return setMessageForm("Debes escribir tu nombre")
+    if (contactForm.subject === "") return setMessageForm("Debes escribir un asunto")
+    if (contactForm.email === "") return setMessageForm("Debes escribir tu correo electrónico")
+    if (contactForm.message === "") return setMessageForm("El correo debe contener un mensaje");
 
     axios.post('http://localhost:3001/api/contact', contactForm)
       .then((response) => {
+        alert(response.data)
         console.log(response.data);
+        setcontactForm({
+          name: "",
+          subject: "",
+          email: "",
+          message: "",
+        })
+        setMessageForm("");
       })
       .catch((error) => {
+        alert(error)
         console.log(error);
       });
   };
@@ -31,6 +47,23 @@ const ContactForm = () => {
 
   return (
     <form className="contact__form" onSubmit={handleSubmit}>
+      {
+        messageForm.length ?
+          <div className="form__error">
+            {messageForm}
+          </div> : null
+      }
+      <div className="form__section">
+        <label htmlFor="subject">Nombre:</label>
+        <input
+          type="text"
+          className="form__input"
+          name="name"
+          value={contactForm.name}
+          onChange={handleContactForm}
+        />
+      </div>
+
       <div className="form__section">
         <label htmlFor="subject">Asunto:</label>
         <input

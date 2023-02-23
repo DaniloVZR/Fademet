@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(cors());
 
 app.post('/api/contact', (req, res) => {
-  const { subject, email, message } = req.body;
+  const { name, subject, email, message } = req.body;
 
   // const transporter = nodemailer.createTransport({
   //   service: 'gmail',
@@ -29,9 +29,12 @@ app.post('/api/contact', (req, res) => {
   const mailOptions = {
     from: email,
     to: 'daniloud2809@gmail.com',
-    subject: `Mensaje de ${email}: ${subject}`,
+    subject: `Mensaje de ${name}: ${subject}`,
     text: `${message}`,
-    html: `<h2>${message}</h2>`
+    html: `
+      <h2>${subject}</h2>
+      <h4>${message}</h4>
+    `
   };
 
   transporter.sendMail(mailOptions, (error, info) => {

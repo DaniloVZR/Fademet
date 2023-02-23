@@ -19,11 +19,11 @@ const Footer = () => {
           <p>Contacto:</p>
           <p>Celular: 314-7561960 - 3175030339</p>
           <div className="footer-social">
-            <a href="https://api.whatsapp.com/send/?phone=573147561960&text&type=phone_number&app_absent=0" target="_blank" className="footer-social__wpp">
-              <i className="fa-brands fa-whatsapp fa-3x"></i>
+            <a href="https://api.whatsapp.com/send/?phone=573147561960&text&type=phone_number&app_absent=0" target="_blank" className="footer-social-i wpp">
+              <i className="fa-brands fa-whatsapp fa-2x"></i>
             </a>
-            <a href="https://www.instagram.com/fademetmontajes/?hl=es" target="_blank" className="footer-social__ig">
-              <i className="fa-brands fa-instagram fa-3x"></i>
+            <a href="https://www.instagram.com/fademetmontajes/?hl=es" target="_blank" className="footer-social-i ig">
+              <i className="fa-brands fa-instagram fa-2x"></i>
             </a>
           </div>
         </div>
