@@ -8,12 +8,68 @@
   height: max-content;
 }
 
+.contactanos__content {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 5rem;
+}
+
+.contactanos__medios {
+  margin-top: 3rem;
+}
+
+.contactanos__medios-celrs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.contact-icon {
+  border-radius: .5rem;
+  padding: .5rem;
+  transition: .6s ease;
+}
+
+.contactanos-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.contactanos-social>a {
+  color: white;
+}
+
+.wpp {
+  background-color: #2BB741;
+}
+
+.ig {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.contact-icon:hover {
+  transform: scale(0.9);
+}
+
+.form__error {
+  background-color: rgb(183, 45, 45);
+  color: rgb(222, 222, 222);
+  border: 1px solid black;
+  font-weight: bold;
+  padding: .5rem;
+}
+
 .contact__form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   width: 50%;
-  margin: 0 auto;
+  gap: 1rem;
   padding: 2rem 0;
 }
 
@@ -38,11 +94,11 @@
   padding: .3rem;
   font-family: 'Raleway', sans-serif;
   color: rgb(222, 222, 222);
-  transition: .6s ease;
+  transition: .4s ease;
 }
 
 .form__submit:hover {
   border: 1px solid black;
   color: rgba(18, 18, 18, 0.80);
-  background: rgb(222, 222, 222);
+  background: rgb(26, 143, 81);
 }

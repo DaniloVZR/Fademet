@@ -22,20 +22,25 @@ p {
 .footer-address {
   display: flex;
   flex-direction: column;
-
 }
 
 .footer-social {
   display: flex;
-  gap: 2rem;
+  margin-top: .4rem;
+  gap: 1rem;
 }
 
-.footer-social__wpp {
-  color: green;
+.footer-social-i {
+  color: white;
+  display: flex;
+  padding: .5rem;
+  border-radius: 50%;
+  transition: .6s ease;
 }
 
-.footer-social__ig {
-  color: purple;
+.footer-social-i:hover {
+  color: white;
+  transform: scale(.8);
 }
 
 .copy {
