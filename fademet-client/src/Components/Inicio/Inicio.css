@@ -12,6 +12,10 @@ h6 {
   background-color: #dfdfdf;
 }
 
+.inicio__home {
+  display: flex;
+}
+
 .inicio-container {
   margin: 3rem;
   border-radius: .5rem;

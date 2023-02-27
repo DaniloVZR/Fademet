@@ -9,12 +9,12 @@ const Inicio = () => {
   return (
     <div className="inicio">
       <Navbar />
-      <Carousel />
+      <div className="inicio__home">
+        <Carousel />
+        <Description />
+      </div>
       <Servicios />
       <Footer />
-      {/* <div className="description-component">
-        <Description />
-      </div> */}
     </div>
 
   )
