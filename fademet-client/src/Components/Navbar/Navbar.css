@@ -8,17 +8,15 @@ a {
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(18, 18, 18, 0.80);
+  /* background-color: rgba(18, 18, 18); */
+  background-color: #050505;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   z-index: 99;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
-  background-color: rgba(18, 18, 18, 0.90);
+  background-color: rgba(18, 18, 18);
+  background-color: #050505;
   position: relative;
 }
 
@@ -52,9 +50,7 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: max-content;
   gap: 1rem;
-  border-radius: 1.5rem;
   font-size: 15px;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
@@ -89,7 +85,7 @@ a {
   font-family: inherit;
   text-transform: uppercase;
   color: white;
-  z-index: 1;
+  z-index: 99;
 }
 
 .button::before,
