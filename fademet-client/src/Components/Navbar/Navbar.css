@@ -71,7 +71,7 @@ a {
 }
 
 .button {
-  --color: rgb(255, 127, 55);
+  --color: #d95f18;
   padding: 0.7em 1.7em;
   background-color: transparent;
   border-radius: .5em;

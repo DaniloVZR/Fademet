@@ -98,7 +98,7 @@ const ContactForm = () => {
       </div>
 
       <div className="form__section">
-        <button type="submit" className="form__submit">Enviar</button>
+        <button type="submit" className="form__submit">Enviar <i className="fa-solid fa-paper-plane iconplane"></i></button>
       </div>
     </form>
   )

@@ -29,7 +29,7 @@ const Navbar = (props) => {
           <button className="button">Nosotros</button>
         </Link>
         <Link to='/Contactanos'>
-          <button className="button">Contactanos</button>
+          <button className="button">Contáctanos</button>
         </Link>
       </div>
     </div >

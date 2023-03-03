@@ -1,9 +1,11 @@
 import servicesList from "../../utils/Services";
+import { useRef } from "react";
 import "./Servicios.css";
 
 const Servicios = () => {
+  const serviciosRef = useRef(null)
   return (
-    <div className="servicios">
+    <div className="servicios" id="servicios" ref={serviciosRef}>
       <div className="servicios-container">
         <div className="servicios-title">
           <h1>Servicios</h1>
