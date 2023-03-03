@@ -9,7 +9,7 @@
   width: 150px;
   background-color: rgba(18, 18, 18);
   margin-top: -.1rem;
-  margin-right: -.0009rem;
+  margin-right: -.09rem;
   clip-path: polygon(100% 0, 0 0, 100% 100%);
   z-index: 9;
 }

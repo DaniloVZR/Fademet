@@ -84,7 +84,7 @@
 
 .textarea-input {
   height: 100px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .form__submit {
