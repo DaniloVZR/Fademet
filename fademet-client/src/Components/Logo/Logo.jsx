@@ -5,7 +5,10 @@ const Logo = () => {
   return (
     <div className="navbar-logo">
       <div className="nv">
-        <img className="navbar-logo__img fa-spin" src={logo} alt="Logo" />
+        <img
+          onMouseOver={(e) => e.currentTarget.classList.add("fa-spin")}
+          onMouseOut={(e) => e.currentTarget.classList.remove("fa-spin")}
+          className="navbar-logo__img" src={logo} alt="Logo" />
       </div>
       <h1 className="navbar-logo__text">FADEMET</h1>
     </div>

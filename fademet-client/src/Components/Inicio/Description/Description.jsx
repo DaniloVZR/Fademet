@@ -14,9 +14,14 @@ const Description = () => {
               <h6 className="title">Somos una empresa domiciliada y creada en la ciudad de Medellín, con el fin de ofrecer productos y servicios metalmecánicos, estamos especializados en el diseño, fabricación y montaje de estructuras metálicas para el sector industrial y doméstico.</h6>
             </div>
           </div>
-          <Link to='/'>
-            <button className="button btn-width">Mira Nuestros Servicios</button>
-          </Link>
+          <div className="desc__info-btn">
+            <button
+              onClick={() => document.getElementById("servicios").scrollIntoView({ behavior: "smooth" })}
+              className="button btn-width">Mira Nuestros Servicios</button>
+            <button
+              onClick={() => document.getElementById("eligenos").scrollIntoView({ behavior: "smooth" })}
+              className="button btn-width">¿Por qué Elegirnos?</button>
+          </div>
         </div>
       </div>
     </div>
