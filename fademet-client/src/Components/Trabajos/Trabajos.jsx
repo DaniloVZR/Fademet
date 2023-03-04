@@ -9,23 +9,38 @@ const Trabajos = () => {
 
   const [data, setData] = useState({
     img: '',
+    title: '',
+    location: '',
+    desc: '',
     i: 0
   })
 
-  const viewImage = (img, i) => {
-    setData({ img, i })
+  const viewImage = (img, title, location, desc, i) => {
+    setData({ img, title, location, desc, i })
   }
 
   const imgAction = (action) => {
     let i = data.i;
     if (action === "next-img") {
-      setData({ img: images[i + 1].photo, i: i + 1 });
+      setData({
+        img: images[i + 1].photo,
+        title: images[i + 1].title,
+        location: images[i + 1].location,
+        desc: images[i + 1].description,
+        i: i + 1
+      });
     }
     if (action === "prev-img") {
-      setData({ img: images[i - 1].photo, i: i - 1 })
+      setData({
+        img: images[i - 1].photo,
+        title: images[i - 1].title,
+        location: images[i - 1].location,
+        desc: images[i - 1].description,
+        i: i - 1
+      })
     }
     if (!action) {
-      setData({ img: "", i: 0 })
+      setData({ img: "", title: "", location: "", desc: "", i: 0 })
     }
   }
 
@@ -59,25 +74,47 @@ const Trabajos = () => {
         {
           data.img &&
           <div className="trabajos__img-selected">
-            <button
-              onClick={() => imgAction()}
-              style={{ position: "absolute", top: 0, right: 0 }}
-            >
-              X
-            </button>
-            <img src={data.img} style={{ width: "auto", maxWidth: "90%", maxHeight: "90%" }} />
-            <button
-              disabled={data.i === 0}
-              onClick={() => imgAction("prev-img")}
-            >
-              Prev
-            </button>
-            <button
-              disabled={data.i === images.length - 1}
-              onClick={() => imgAction("next-img")}
-            >
-              Next
-            </button>
+            <img
+              src={data.img}
+              className="trabajos_image"
+            />
+
+            <div className="trabajos__img-panel">
+              <div className="trabajos__img-btn">
+                <button
+                  className="trabajos__btns"
+                  disabled={data.i === 0}
+                  onClick={() => imgAction("prev-img")}
+                >
+                  <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+                <button
+                  className="trabajos__btns"
+                  disabled={data.i === images.length - 1}
+                  onClick={() => imgAction("next-img")}
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <button
+                  className="trabajos__btns"
+                  onClick={() => imgAction()}
+                >
+                  <i class="fa-solid fa-x"></i>
+                </button>
+              </div>
+              <div className="trabajos__img-info">
+                <h2>{data.title}</h2>
+                <div className="trabajos__info-location">
+                  <i className="fa-sharp fa-solid fa-location-dot" />
+                  <span>{data.location}</span>
+                </div>
+                <p>{data.desc}</p>
+              </div>
+            </div>
+
+
           </div>
         }
         <div className="trabajos__gallery-container">
@@ -90,7 +127,7 @@ const Trabajos = () => {
                   src={image.photo}
                   style={{ width: "100%", display: "block", cursor: "pointer" }}
                   alt={image.title}
-                  onClick={() => viewImage(image.photo, i)}
+                  onClick={() => viewImage(image.photo, image.title, image.location, image.description, i)}
                 />
               ))}
             </Masonry>
