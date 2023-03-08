@@ -19,6 +19,12 @@ h6 {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
+@media (max-width: 1050px) {
+  .inicio__home {
+    flex-direction: column;
+  }
+}
+
 .inicio-container {
   margin: 3rem;
   border-radius: .5rem;
@@ -37,4 +43,11 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.inicio__divider {
+  font-size: 2rem;
+  color: #dfdfdf;
+  padding: .5rem 0;
+  background-color: #0a0a0a;
 }

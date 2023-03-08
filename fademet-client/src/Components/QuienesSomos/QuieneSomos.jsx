@@ -6,8 +6,8 @@ const QuienesSomos = () => {
   return (
     <div className="somos">
       <Navbar />
-      <div className="somos__container">
-        <div className="trabajos-title">
+      <section className="somos__container">
+        <div className="section-title">
           <h1>Quiénes Somos</h1>
           <h3>Conócenos un poco más</h3>
         </div>
@@ -22,7 +22,7 @@ const QuienesSomos = () => {
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae asperiores architecto accusantium possimus, est autem, et perspiciatis error animi beatae excepturi. Molestiae aliquid obcaecati commodi nisi aliquam distinctio cupiditate sint.</p>
           </div>
         </div>
-      </div>
+      </section>
       <Footer />
     </div>
   )
