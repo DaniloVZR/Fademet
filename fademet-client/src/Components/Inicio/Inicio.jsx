@@ -10,10 +10,10 @@ const Inicio = () => {
   return (
     <div className="inicio">
       <Navbar />
-      <div className="inicio__home">
+      <main className="inicio__home">
         <Carousel />
         <Description />
-      </div>
+      </main>
       <Eligenos />
       <Servicios />
       <Footer />

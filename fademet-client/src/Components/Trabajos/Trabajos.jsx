@@ -66,7 +66,7 @@ const Trabajos = () => {
       <Navbar />
       <div className="trabajos-wrapper">
         <div className="trabajos-container">
-          <div className="trabajos-title">
+          <div className="section-title">
             <h1>Trabajos</h1>
             <h3>Estos fueron algunos de los trabajos realizados:</h3>
           </div>

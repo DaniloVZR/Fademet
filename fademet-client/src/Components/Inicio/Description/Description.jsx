@@ -8,7 +8,7 @@ const Description = () => {
       <div className="desc__shape" />
       <div className="desc">
         <div className="desc__info">
-          <div className="card">
+          <div className="card animate__animated animate__zoomIn">
             <div className="card-info">
               <img className="desc__info-logo" src={Logo} alt="Logo Fademet" />
               <h6 className="title">Somos una empresa domiciliada y creada en la ciudad de Medellín, con el fin de ofrecer productos y servicios metalmecánicos, estamos especializados en el diseño, fabricación y montaje de estructuras metálicas para el sector industrial y doméstico.</h6>
@@ -17,10 +17,10 @@ const Description = () => {
           <div className="desc__info-btn">
             <button
               onClick={() => document.getElementById("eligenos").scrollIntoView({ behavior: "smooth" })}
-              className="button btn-width">¿Por qué Elegirnos?</button>
+              className="btn-desc">¿Por qué Elegirnos?</button>
             <button
               onClick={() => document.getElementById("servicios").scrollIntoView({ behavior: "smooth" })}
-              className="button btn-width">Mira Nuestros Servicios</button>
+              className="btn-desc">Mira Nuestros Servicios</button>
           </div>
         </div>
       </div>

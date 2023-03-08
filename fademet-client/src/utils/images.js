@@ -4,7 +4,7 @@ const images = [
     "photo": require("../img/Gallery/1.jpg"),
     "title": "Imagen 1",
     "location": "Centro de Medellín, Medellín",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis tincidunt tellus. Vestibulum id urna eget massa cursus tincidunt ac accumsan tellus. Curabitur non quam in nunc tincidunt egestas rhoncus ut nibh. Quisque hendrerit ipsum quis arcu malesuada, sed vulputate sem aliquet. Sed eget congue leo, quis vestibulum velit. Nullam mollis dapibus nulla. Integer diam risus, pellentesque ac efficitur rutrum, pretium eget quam."
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis tincidunt tellus. Vestibulum id urna eget massa cursus tincidunt ac accumsan tellus."
   },
   {
     "id": 2,

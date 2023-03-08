@@ -1,7 +1,18 @@
+.eligenos {
+  background-color: #cbcbcb;
+  padding: 2rem 0;
+}
+
 .eligenos__panels {
   display: flex;
-  gap: 5rem;
+  gap: 10rem;
   margin: 5rem;
+}
+
+@media (max-width: 950px) {
+  .eligenos__panels {
+    flex-direction: column;
+  }
 }
 
 .box {

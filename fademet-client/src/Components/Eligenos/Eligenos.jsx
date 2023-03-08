@@ -1,10 +1,11 @@
+import { motion } from "framer-motion";
 import "./Eligenos.css";
 
 const Eligenos = () => {
   return (
-    <div className="eligenos" id="eligenos">
+    <section className="eligenos" id="eligenos">
       <div className="servicios-container">
-        <div className="servicios-title">
+        <div className="section-title">
           <h1>Por qué Elegirnos</h1>
           <h3>En Fademet contamos con los siguientes servicios:</h3>
         </div>
@@ -29,7 +30,7 @@ const Eligenos = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

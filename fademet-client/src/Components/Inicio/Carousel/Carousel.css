@@ -11,6 +11,7 @@
 
 @media (max-width: 1050px) {
   .Carousel {
+    height: 60vh;
     width: 100%;
   }
 }

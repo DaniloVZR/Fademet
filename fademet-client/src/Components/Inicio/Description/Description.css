@@ -42,6 +42,20 @@
   gap: 1rem;
 }
 
+.btn-desc {
+  border: none;
+  border-radius: 5rem;
+  padding: .5rem 1rem;
+  background-color: #e6e6e6;
+  background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+  font-family: 'Raleway', sans-serif;
+  transition: .3s ease;
+}
+
+.btn-desc:hover {
+  transform: scale(1.1);
+}
+
 /* CARD INFO */
 
 .card {
@@ -61,7 +75,7 @@
 .card::after {
   position: absolute;
   content: "";
-  top: 30px;
+  top: 15px;
   left: 0;
   right: 0;
   z-index: -1;
@@ -112,7 +126,7 @@
 @media (max-width: 1050px) {
   .description {
     display: block;
-    height: 70%;
+    height: 100%;
     width: 100%;
     position: relative;
   }
@@ -142,10 +156,24 @@
 @media (max-width: 670px) {
   .desc__info {
     flex-direction: column;
+    padding: 0s;
     gap: 2rem;
+  }
+
+  .card {
+    width: fit-content;
+  }
+
+  .title {
+    font-size: 10px;
   }
 
   .desc__info-btn {
     flex-direction: row;
   }
+
+  .btn-desc {
+    font-size: 12px;
+  }
+
 }

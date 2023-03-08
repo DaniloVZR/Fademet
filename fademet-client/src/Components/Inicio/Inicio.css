@@ -44,3 +44,10 @@ h6 {
   align-items: center;
   justify-content: center;
 }
+
+.inicio__divider {
+  font-size: 2rem;
+  color: #dfdfdf;
+  padding: .5rem 0;
+  background-color: #0a0a0a;
+}
