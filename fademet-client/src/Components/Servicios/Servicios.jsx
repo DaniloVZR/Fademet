@@ -11,9 +11,9 @@ const Servicios = () => {
         </div>
         <div className="servicios-content">
           {
-            servicesList.map(service => {
+            servicesList.map((service, i) => {
               return (
-                <div className="servicio-option">{service}</div>
+                <div key={i} className="servicio-option">{service}</div>
               )
             })
           }

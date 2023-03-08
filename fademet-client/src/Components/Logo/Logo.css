@@ -9,7 +9,6 @@
 .navbar-logo__img {
   margin: .5rem 0;
   width: 70px;
-  transform: rotate(0deg);
 }
 
 .navbar-logo__text {
@@ -17,8 +16,4 @@
   font-family: 'Raleway', sans-serif;
   color: white;
   transition: .6s;
-}
-
-.navbar-logo__text:hover {
-  letter-spacing: 5px;
 }

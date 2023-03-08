@@ -16,11 +16,11 @@ const Description = () => {
           </div>
           <div className="desc__info-btn">
             <button
-              onClick={() => document.getElementById("servicios").scrollIntoView({ behavior: "smooth" })}
-              className="button btn-width">Mira Nuestros Servicios</button>
-            <button
               onClick={() => document.getElementById("eligenos").scrollIntoView({ behavior: "smooth" })}
               className="button btn-width">¿Por qué Elegirnos?</button>
+            <button
+              onClick={() => document.getElementById("servicios").scrollIntoView({ behavior: "smooth" })}
+              className="button btn-width">Mira Nuestros Servicios</button>
           </div>
         </div>
       </div>

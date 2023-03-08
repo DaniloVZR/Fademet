@@ -9,21 +9,21 @@ const Eligenos = () => {
           <h3>En Fademet contamos con los siguientes servicios:</h3>
         </div>
         <div className="eligenos__panels">
-          <div class="box">
+          <div className="box">
             <span></span>
-            <div class="content">
+            <div className="content">
               <h2>Hover me!</h2>
             </div>
           </div>
-          <div class="box">
+          <div className="box">
             <span></span>
-            <div class="content">
+            <div className="content">
               <h2>Hover me!</h2>
             </div>
           </div>
-          <div class="box">
+          <div className="box">
             <span></span>
-            <div class="content">
+            <div className="content">
               <h2>Hover me!</h2>
             </div>
           </div>
