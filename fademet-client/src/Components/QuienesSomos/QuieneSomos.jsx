@@ -6,7 +6,7 @@ const QuienesSomos = () => {
   return (
     <div className="somos">
       <Navbar />
-      <section className="somos__container">
+      <section className="somos__container m-snav animate__animated animate__fadeIn">
         <div className="section-title">
           <h1>Quiénes Somos</h1>
           <h3>Conócenos un poco más</h3>

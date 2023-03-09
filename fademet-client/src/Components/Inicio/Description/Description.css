@@ -126,7 +126,7 @@
 @media (max-width: 1050px) {
   .description {
     display: block;
-    height: 100%;
+    height: 50vh;
     width: 100%;
     position: relative;
   }
@@ -154,6 +154,12 @@
 }
 
 @media (max-width: 670px) {
+  .description {
+    height: 80vh;
+    width: 100%;
+    position: relative;
+  }
+
   .desc__info {
     flex-direction: column;
     padding: 0s;
@@ -165,7 +171,7 @@
   }
 
   .title {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .desc__info-btn {
@@ -174,6 +180,12 @@
 
   .btn-desc {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 10px;
   }
 
 }

@@ -39,7 +39,7 @@ const Navbar = (props) => {
 
       {
         toggle ?
-          <div className="menu-mobile">
+          <div className="menu-mobile animate__animated animate__fadeInRight">
             <i onClick={() => setToggle(!toggle)} className="fa-solid fa-x mobile-x-btn" />
             <Link className="mobile-btn" to='/'>
               Inicio

@@ -6,26 +6,25 @@ const Eligenos = () => {
     <section className="eligenos" id="eligenos">
       <div className="servicios-container">
         <div className="section-title">
-          <h1>Por qué Elegirnos</h1>
-          <h3>En Fademet contamos con los siguientes servicios:</h3>
+          <h1>¿Por qué Elegirnos?</h1>
         </div>
         <div className="eligenos__panels">
           <div className="box">
             <span></span>
             <div className="content">
-              <h2>Hover me!</h2>
+              <h2>Experiencia y compromiso con la calidad en cada proyecto.</h2>
             </div>
           </div>
           <div className="box">
             <span></span>
             <div className="content">
-              <h2>Hover me!</h2>
+              <h2>Soluciones personalizadas para satisfacer las necesidades únicas de cada cliente.</h2>
             </div>
           </div>
           <div className="box">
             <span></span>
             <div className="content">
-              <h2>Hover me!</h2>
+              <h2>Precios competitivos y atención al cliente excepcional.</h2>
             </div>
           </div>
         </div>
