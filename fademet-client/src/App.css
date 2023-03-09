@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #d95f18 #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 11px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*::-webkit-scrollbar-track {
+  background: #000000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+*::-webkit-scrollbar-thumb {
+  background-color: #d95f18;
+  border-radius: 10px;
+  border: 0px solid #ffffff;
+}
+
+i {
+  margin: 0;
+}
+
+.section-title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem;
+  gap: 1rem;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.section-title>h1 {
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.m-snav {
+  margin-top: 90px;
+}
+
+@media (max-width: 768px) {
+  .m-snav {
+    margin-top: 70px;
   }
 }

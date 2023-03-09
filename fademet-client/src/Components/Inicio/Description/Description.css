@@ -1,0 +1,191 @@
+.description {
+  position: absolute;
+  display: flex;
+  right: 0;
+  height: 100%;
+}
+
+.desc__shape {
+  width: 150px;
+  background-color: rgba(18, 18, 18);
+  margin-top: -.1rem;
+  margin-right: -.09rem;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  z-index: 9;
+}
+
+.desc {
+  display: flex;
+  height: 100%;
+  right: 0;
+  width: 40vw;
+  background-color: rgba(18, 18, 18);
+  z-index: 50;
+}
+
+.desc__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 4rem;
+}
+
+.desc__info-logo {
+  height: 200px;
+}
+
+.desc__info-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn-desc {
+  border: none;
+  border-radius: 5rem;
+  padding: .5rem 1rem;
+  background-color: #e6e6e6;
+  background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+  font-family: 'Raleway', sans-serif;
+  transition: .3s ease;
+}
+
+.btn-desc:hover {
+  transform: scale(1.1);
+}
+
+/* CARD INFO */
+
+.card {
+  --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+  width: 400px;
+  height: max-content;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 1rem;
+  overflow: visible;
+  background: #f7ba2b;
+  background: var(--background);
+  position: relative;
+  z-index: 1;
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.9);
+  filter: blur(25px);
+  background: #f7ba2b;
+  background: var(--background);
+  transition: opacity .5s;
+}
+
+.card-info {
+  --color: #090909;
+  background: var(--color);
+  color: var(--color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  height: 100%;
+  overflow: visible;
+  border-radius: .7rem;
+  padding: 2rem;
+}
+
+.card .title {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  text-align: center;
+  color: #dedede;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
+/*Hover*/
+.card:hover::after {
+  opacity: 0;
+}
+
+.card:hover .card-info {
+  color: #f7ba2b;
+  transition: color 1s;
+}
+
+
+@media (max-width: 1050px) {
+  .description {
+    display: block;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+  }
+
+  .desc__shape {
+    display: none;
+  }
+
+  .desc {
+    width: 100%;
+  }
+
+  .desc__info {
+    padding: 0 2rem;
+    flex-direction: row;
+  }
+
+  .card-info {
+    flex-direction: row;
+  }
+
+  .desc__info-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 670px) {
+  .description {
+    height: 80vh;
+    width: 100%;
+    position: relative;
+  }
+
+  .desc__info {
+    flex-direction: column;
+    padding: 0s;
+    gap: 2rem;
+  }
+
+  .card {
+    width: fit-content;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+
+  .desc__info-btn {
+    flex-direction: row;
+  }
+
+  .btn-desc {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 10px;
+  }
+
+}
