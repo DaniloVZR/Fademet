@@ -64,59 +64,57 @@ const Trabajos = () => {
   return (
     <div className="trabajos">
       <Navbar />
-      <div className="trabajos-wrapper">
+      {
+        data.img &&
+        <div className="trabajos__img-selected">
+          <img
+            src={data.img}
+            className="trabajos_image"
+          />
+
+          <div className="trabajos__img-panel">
+            <div className="trabajos__img-btn">
+              <button
+                className="trabajos__btns"
+                disabled={data.i === 0}
+                onClick={() => imgAction("prev-img")}
+              >
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+
+              <button
+                className="trabajos__btns"
+                disabled={data.i === images.length - 1}
+                onClick={() => imgAction("next-img")}
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+
+              <button
+                className="trabajos__btns"
+                onClick={() => imgAction()}
+              >
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </div>
+            <div className="trabajos__img-info">
+              <h2>{data.title}</h2>
+              <div className="trabajos__info-location">
+                <i className="fa-sharp fa-solid fa-location-dot" />
+                <span>{data.location}</span>
+              </div>
+              <p>{data.desc}</p>
+            </div>
+          </div>
+        </div>
+      }
+      <div className="trabajos-wrapper m-snav animate__animated animate__fadeIn">
         <div className="trabajos-container">
           <div className="section-title">
             <h1>Trabajos</h1>
             <h3>Estos fueron algunos de los trabajos realizados:</h3>
           </div>
         </div>
-        {
-          data.img &&
-          <div className="trabajos__img-selected">
-            <img
-              src={data.img}
-              className="trabajos_image"
-            />
-
-            <div className="trabajos__img-panel">
-              <div className="trabajos__img-btn">
-                <button
-                  className="trabajos__btns"
-                  disabled={data.i === 0}
-                  onClick={() => imgAction("prev-img")}
-                >
-                  <i class="fa-solid fa-arrow-left"></i>
-                </button>
-
-                <button
-                  className="trabajos__btns"
-                  disabled={data.i === images.length - 1}
-                  onClick={() => imgAction("next-img")}
-                >
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-
-                <button
-                  className="trabajos__btns"
-                  onClick={() => imgAction()}
-                >
-                  <i class="fa-solid fa-x"></i>
-                </button>
-              </div>
-              <div className="trabajos__img-info">
-                <h2>{data.title}</h2>
-                <div className="trabajos__info-location">
-                  <i className="fa-sharp fa-solid fa-location-dot" />
-                  <span>{data.location}</span>
-                </div>
-                <p>{data.desc}</p>
-              </div>
-            </div>
-
-
-          </div>
-        }
         <div className="trabajos__gallery-container">
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>

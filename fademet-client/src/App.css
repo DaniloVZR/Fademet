@@ -37,3 +37,13 @@ i {
 .section-title>h1 {
   text-transform: uppercase;
 }
+
+.m-snav {
+  margin-top: 90px;
+}
+
+@media (max-width: 768px) {
+  .m-snav {
+    margin-top: 70px;
+  }
+}

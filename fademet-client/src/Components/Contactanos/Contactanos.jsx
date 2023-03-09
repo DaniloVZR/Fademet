@@ -8,7 +8,7 @@ const Contactanos = () => {
   return (
     <div className="Contactanos">
       <Navbar />
-      <section className="Contactanos__container">
+      <section className="Contactanos__container m-snav animate__animated animate__fadeIn">
         <div className="section-title">
           <h1>Contáctanos!</h1>
           <h3>Si deseas cotizar algún proyecto, no dudes en escribirnos o enviarnos un correo</h3>

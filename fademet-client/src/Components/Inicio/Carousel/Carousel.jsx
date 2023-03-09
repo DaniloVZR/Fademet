@@ -23,7 +23,7 @@ const Carousel = () => {
         delay: 4000,
         disableOnInteraction: false
       }}
-      className="Carousel"
+      className="Carousel animate__animated animate__fadeIn"
     >
       <SwiperSlide><img className='Carousel-img' src={Img1} /></SwiperSlide>
       <SwiperSlide><img className='Carousel-img' src={Img2} /></SwiperSlide>
