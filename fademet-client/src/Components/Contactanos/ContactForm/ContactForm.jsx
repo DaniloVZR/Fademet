@@ -1,5 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
+import Swal from "sweetalert2";
+axios.defaults.baseURL = "http://localhost:3001/"
 
 const ContactForm = () => {
 
@@ -26,10 +28,13 @@ const ContactForm = () => {
     if (contactForm.email === "") return setMessageForm("Debes escribir tu correo electrónico")
     if (contactForm.message === "") return setMessageForm("El correo debe contener un mensaje");
 
-    axios.post('http://localhost:3001/api/contact', contactForm)
+    axios.post('/api/contact', contactForm)
       .then((response) => {
-        alert(response.data)
-        console.log(response.data);
+        Swal.fire(
+          'Correo Enviado!',
+          response.data,
+          'success'
+        );
         setcontactForm({
           name: "",
           subject: "",
@@ -39,7 +44,11 @@ const ContactForm = () => {
         setMessageForm("");
       })
       .catch((error) => {
-        alert(error)
+        Swal.fire(
+          'No se envió el correo',
+          'Inténtalo más tarde',
+          'error'
+        );
         console.log(error);
       });
   };
