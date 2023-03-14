@@ -3,113 +3,41 @@ import Footer from "../Footer/Footer";
 import images from "../../utils/images";
 import "./Trabajos.css"
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+// Swiper
+import { Swiper, SwiperSlide } from "swiper/react";
+// import required modules
+import { Navigation } from "swiper";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
 import { useEffect, useState } from "react";
+import Modal from "react-modal";
 
 const Trabajos = () => {
 
-  const [data, setData] = useState({
-    img: '',
-    title: '',
-    location: '',
-    desc: '',
-    i: 0
-  })
+  const [slideNumber, setSlideNumber] = useState(0)
+  const [openModal, setOpenModal] = useState(false)
 
-  const viewImage = (img, title, location, desc, i) => {
-    setData({ img, title, location, desc, i })
+  const handleOpenModal = (i) => {
+    setSlideNumber(i)
+    setOpenModal(true)
   }
-
-  const imgAction = (action) => {
-    let i = data.i;
-    if (action === "next-img") {
-      setData({
-        img: images[i + 1].photo,
-        title: images[i + 1].title,
-        location: images[i + 1].location,
-        desc: images[i + 1].description,
-        i: i + 1
-      });
-    }
-    if (action === "prev-img") {
-      setData({
-        img: images[i - 1].photo,
-        title: images[i - 1].title,
-        location: images[i - 1].location,
-        desc: images[i - 1].description,
-        i: i - 1
-      })
-    }
-    if (!action) {
-      setData({ img: "", title: "", location: "", desc: "", i: 0 })
-    }
-  }
-
-  useEffect(() => {
-    const handleKeyDown = (event) => {
-      if (event.keyCode === 37) { // left arrow
-        imgAction("prev-img");
-      } else if (event.keyCode === 39) { // right arrow
-        imgAction("next-img");
-      }
-    };
-
-    document.addEventListener("keydown", handleKeyDown);
-
-    return () => {
-      document.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [data.i]);
-
 
   return (
     <div className="trabajos">
       <Navbar />
-      {
-        data.img &&
-        <div className="trabajos__img-selected">
-          <div className="trabajos__image-menu">
-            <img
-              src={data.img}
-              className="trabajos__img"
-            />
-
-            <div className="trabajos__img-panel">
-              <div className="trabajos__img-btn">
-                <button
-                  className="trabajos__btns"
-                  disabled={data.i === 0}
-                  onClick={() => imgAction("prev-img")}
-                >
-                  <i class="fa-solid fa-arrow-left"></i>
-                </button>
-
-                <button
-                  className="trabajos__btns"
-                  disabled={data.i === images.length - 1}
-                  onClick={() => imgAction("next-img")}
-                >
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-
-                <button
-                  className="trabajos__btns"
-                  onClick={() => imgAction()}
-                >
-                  <i class="fa-solid fa-x"></i>
-                </button>
-              </div>
-              <div className="trabajos__img-info">
-                <h2>{data.title}</h2>
-                <div className="trabajos__info-location">
-                  <i className="fa-sharp fa-solid fa-location-dot" />
-                  <span>{data.location}</span>
-                </div>
-              </div>
+      <div className="trabajos-wrapper m-snav animate__animated animate__fadeIn">
+        {
+          openModal &&
+          <div className="sliderWrap">
+            <div>X</div>
+            <div>Prev</div>
+            <div>Next</div>
+            <div className="fullScreenImage">
+              <img src={images[slideNumber].photo} alt="" />
             </div>
           </div>
-        </div>
-      }
-      <div className="trabajos-wrapper m-snav animate__animated animate__fadeIn">
+        }
         <div className="trabajos-container">
           <div className="section-title">
             <h1>Trabajos</h1>
@@ -126,7 +54,8 @@ const Trabajos = () => {
                   src={image.photo}
                   style={{ width: "100%", display: "block", cursor: "pointer" }}
                   alt={image.title}
-                  onClick={() => viewImage(image.photo, image.title, image.location, image.description, i)}
+                  onClick={() => handleOpenModal(i)}
+                // onClick={() => viewImage(image.photo, image.title, image.location, image.description, i)}
                 />
               ))}
             </Masonry>

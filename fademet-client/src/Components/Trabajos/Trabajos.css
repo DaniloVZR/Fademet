@@ -1,3 +1,9 @@
+/* SWIPER */
+
+.sliderWrap {}
+
+/*  */
+
 .trabajos {
   height: max-content;
   background-color: rgb(222, 222, 222);
@@ -31,9 +37,6 @@
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.9);
-  position: fixed;
-  top: 0;
-  overflow: hidden;
   z-index: 99;
   gap: 2rem;
   display: grid;

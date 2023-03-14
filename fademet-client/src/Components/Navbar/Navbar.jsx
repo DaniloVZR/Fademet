@@ -17,7 +17,7 @@ const Navbar = (props) => {
             <button className="button">Inicio</button>
           </Link>
           <Link to='/Trabajos'>
-            <button className="button">Trabajos</button>
+            <button className="button">Galería</button>
           </Link>
           <Link to='/QuienesSomos'>
             <button className="button">Nosotros</button>
