@@ -34,8 +34,10 @@ const Servicios = () => {
           className="servicios-content">
           {
             servicesList.map((service, i) => {
+              // const isFirstColumn = i < servicesList.length / 2
+              // const className = `servicio-option ${isFirstColumn ? 'column-1' : 'column-2'}`;
               return (
-                <motion.div key={i} className="servicio-option" variants={item}>{service}</motion.div>
+                <motion.div key={i} className={`servicio-option`} variants={item}>{service}</motion.div>
               )
             })
           }

@@ -20,7 +20,7 @@ const Description = () => {
               className="btn-desc">¿Por qué Elegirnos?</button>
             <button
               onClick={() => document.getElementById("servicios").scrollIntoView({ behavior: "smooth" })}
-              className="btn-desc">Mira Nuestros Servicios</button>
+              className="btn-desc">Nuestros Servicios</button>
           </div>
         </div>
       </div>
