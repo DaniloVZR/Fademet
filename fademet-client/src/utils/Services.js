@@ -1,5 +1,27 @@
 const servicesList = [
-  "Casetas", "Pérgolas", "Cubiertas", "Mezzanine", "Plataformas", "Cerramientos", "Pisos en deck", "Bases Metálicas", "Techos Metálicos", "Acero Inoxidable", "Cárcamos Metálicos", "Escaleras Metálicas", "Ventanería en Aluminio", "Fascia o áticos en aluminio", "Soportes de acero en general", "Pasamanos industriales y domésticos", "Puertas fijas, batientes y corredizas con motor", "Ingeniería, diseño, fabricación de estructuras metálicas", "Montaje de cubiertas en placa de superboard o fibrocemento", "Impermeabilización de superficies con soluciones asfálticas", "Soldadura en general MIG-MAG en acero al carbono e inoxidable", "Asesoría, diseño y fabricación de todo tipo de prototipos metálicos", "Manifolds, spools y bypass de tuberías con accesorios completos, prefabricado de tuberías"
+  "Techos Metálicos",
+  "Casetas",
+  "Pérgolas",
+  "Acero Inoxidable",
+  "Impermeabilización de superficies con soluciones asfálticas",
+  "Asesoría, diseño y fabricación de todo tipo de prototipos metálicos",
+  "Cubiertas",
+  "Pisos en deck",
+  "Bases Metálicas",
+  "Cárcamos Metálicos",
+  "Puertas fijas, batientes y corredizas con motor",
+  "Cerramientos",
+  "Montaje de cubiertas en placa de superboard o fibrocemento",
+  "Escaleras Metálicas",
+  "Ventanería en Aluminio",
+  "Soldadura en general MIG-MAG en acero al carbono e inoxidable",
+  "Fascia o áticos en aluminio",
+  "Soportes de acero en general",
+  "Mezzanine",
+  "Pasamanos industriales y domésticos",
+  "Plataformas",
+  "Ingeniería, diseño, fabricación de estructuras metálicas",
+  "Manifolds, spools y bypass de tuberías con accesorios completos, prefabricado de tuberías",
 ]
 
 export default servicesList;

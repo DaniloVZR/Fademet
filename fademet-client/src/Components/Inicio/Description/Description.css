@@ -17,7 +17,6 @@
 .desc {
   display: flex;
   height: 100%;
-  right: 0;
   width: 40vw;
   background-color: rgba(18, 18, 18);
   z-index: 50;
@@ -38,7 +37,6 @@
 
 .desc__info-btn {
   display: flex;
-  flex-direction: column;
   gap: 1rem;
 }
 
@@ -53,7 +51,7 @@
 }
 
 .btn-desc:hover {
-  transform: scale(1.1);
+  transform: translateY(-10px) scale(1.1);
 }
 
 /* CARD INFO */
@@ -122,6 +120,13 @@
   transition: color 1s;
 }
 
+@media (max-height: 800px) {
+  .desc__info {
+    position: relative;
+    scale: 0.8;
+  }
+}
+
 
 @media (max-width: 1050px) {
   .description {
@@ -140,8 +145,14 @@
   }
 
   .desc__info {
-    padding: 0 2rem;
+    display: flex;
     flex-direction: row;
+    padding: 0 2rem;
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
   }
 
   .card-info {
@@ -150,6 +161,11 @@
 
   .desc__info-logo {
     display: none;
+  }
+
+  .desc__info-btn {
+    width: 100%;
+    flex-direction: column;
   }
 }
 
@@ -175,10 +191,12 @@
   }
 
   .desc__info-btn {
+    justify-content: center;
     flex-direction: row;
   }
 
   .btn-desc {
+    width: 100%;
     font-size: 12px;
   }
 }
