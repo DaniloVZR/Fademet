@@ -5,14 +5,7 @@
   transition: .6s;
 }
 
-
 .navbar-logo__img {
   margin: .5rem 0;
   width: 70px;
-}
-
-.navbar-logo__text {
-  /* font-size: 2rem;
-  font-family: 'Raleway', sans-serif;
-  color: white; */
 }

@@ -3,11 +3,11 @@ import { Link, useLocation } from "react-router-dom";
 import Logo from "../Logo/Logo";
 import "./Navbar.css";
 
-const Navbar = (props) => {
+const Navbar = ({ isModalOpen }) => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className={`navbar`}>
+    <nav className={`nv-z ${isModalOpen ? "modal-open" : ""}`}>
       <div className="navbar nav-default">
         <Link to='/'>
           <Logo />
@@ -17,7 +17,7 @@ const Navbar = (props) => {
             <button className="button">Inicio</button>
           </Link>
           <Link to='/Trabajos'>
-            <button className="button">Trabajos</button>
+            <button className="button">Galería</button>
           </Link>
           <Link to='/QuienesSomos'>
             <button className="button">Nosotros</button>
@@ -39,7 +39,7 @@ const Navbar = (props) => {
 
       {
         toggle ?
-          <div className="menu-mobile animate__animated animate__fadeInRight">
+          <div className="menu-mobile animate__animated animate__slideInRight">
             <i onClick={() => setToggle(!toggle)} className="fa-solid fa-x mobile-x-btn" />
             <Link className="mobile-btn" to='/'>
               Inicio
@@ -56,15 +56,6 @@ const Navbar = (props) => {
           </div> : null
       }
     </nav >
-  )
-}
-
-
-const mobileMenu = () => {
-  return (
-    <div>
-
-    </div>
   )
 }
 
