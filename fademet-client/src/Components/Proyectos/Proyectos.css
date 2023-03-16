@@ -1,0 +1,46 @@
+.Proyectos {
+  background-color: rgb(222, 222, 222);
+}
+
+.Proyectos__container {
+  padding: 2rem 0;
+  height: max-content;
+}
+
+.project__cards__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.project__card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  height: 300px;
+  max-width: 1000px;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
+}
+
+.project__card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.project__card:nth-child(odd) {
+  text-align: right;
+}
+
+.project__card img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 1rem;
+}
+
+.project__card>div {
+  width: 800px;
+}
