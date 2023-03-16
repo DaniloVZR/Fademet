@@ -1,18 +1,11 @@
+import { useState } from "react";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import images from "../../utils/images";
-import "./Trabajos.css"
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-// Swiper
-import { Swiper, SwiperSlide } from "swiper/react";
-// import required modules
-import { Navigation } from "swiper";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import { useEffect, useState } from "react";
+import "./Gallery.css"
 
-const Trabajos = () => {
+const Gallery = () => {
   const [slideNumber, setSlideNumber] = useState(0)
   const [openModal, setOpenModal] = useState(false)
 
@@ -94,4 +87,4 @@ const Trabajos = () => {
   )
 }
 
-export default Trabajos;
+export default Gallery;

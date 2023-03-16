@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../Logo/Logo";
 import "./Navbar.css";
 
@@ -16,7 +16,10 @@ const Navbar = ({ isModalOpen }) => {
           <Link to='/'>
             <button className="button">Inicio</button>
           </Link>
-          <Link to='/Trabajos'>
+          <Link to='/Proyectos'>
+            <button className="button">Proyectos</button>
+          </Link>
+          <Link to='/Galería'>
             <button className="button">Galería</button>
           </Link>
           <Link to='/QuienesSomos'>
@@ -44,8 +47,11 @@ const Navbar = ({ isModalOpen }) => {
             <Link className="mobile-btn" to='/'>
               Inicio
             </Link>
-            <Link className="mobile-btn" to='/Trabajos'>
-              Trabajos
+            <Link className="mobile-btn" to='/Proyectos'>
+              Proyectos
+            </Link>
+            <Link className="mobile-btn" to='/Galería'>
+              Galería
             </Link>
             <Link className="mobile-btn" to='/QuienesSomos'>
               Nosotros

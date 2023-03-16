@@ -25,6 +25,16 @@
   z-index: 9999;
 }
 
+.sliderWrap .btnClose {
+  color: rgb(208, 9, 9);
+  opacity: 1;
+  transition: .4s;
+}
+
+.btnClose:hover {
+  transform: scale(1.4);
+}
+
 .btnClose:hover,
 .btnPrev:hover,
 .btnNext:hover {
