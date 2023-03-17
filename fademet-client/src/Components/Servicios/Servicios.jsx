@@ -23,8 +23,8 @@ const Servicios = () => {
   return (
     <section className="servicios" id="servicios">
       <div className="servicios-container">
-        <div className="servicios-title">
-          <h1>Servicios</h1>
+        <div className="section-title">
+          <h1>Nuestros Servicios</h1>
           <h3>En Fademet contamos con los siguientes servicios:</h3>
         </div>
         <motion.div
