@@ -36,6 +36,11 @@ i {
 
 .section-title>h1 {
   text-transform: uppercase;
+  --border: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+  font-weight: bold;
+  border-bottom: 5px solid;
+  margin-bottom: 2rem;
+  border-image: linear-gradient(to left, #ea5358, #f7ba2b) 1;
 }
 
 .m-snav {
