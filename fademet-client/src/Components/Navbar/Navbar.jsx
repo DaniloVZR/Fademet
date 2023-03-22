@@ -26,7 +26,7 @@ const Navbar = ({ isModalOpen }) => {
           <Link onClick={handleClick} to='/Galería'>
             <button className="button">Galería</button>
           </Link>
-          <Link onClick={handleClick} to='/QuienesSomos'>
+          <Link onClick={handleClick} to='/About'>
             <button className="button">Nosotros</button>
           </Link>
           <Link onClick={handleClick} to='/Contactanos'>
@@ -57,7 +57,7 @@ const Navbar = ({ isModalOpen }) => {
             <Link onClick={handleClick} className="mobile-btn" to='/Galería'>
               Galería
             </Link>
-            <Link onClick={handleClick} className="mobile-btn" to='/QuienesSomos'>
+            <Link onClick={handleClick} className="mobile-btn" to='/About'>
               Nosotros
             </Link>
             <Link onClick={handleClick} className="mobile-btn" to='/Contactanos'>
