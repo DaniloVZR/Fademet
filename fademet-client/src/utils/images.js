@@ -3,7 +3,7 @@ const images = [
     "id": 1,
     "photo": require("../img/Gallery/1.jpg"),
     "title": "Imagen 1",
-    "location": "Centro de Medellín, Medellín",
+    "location": "Centro, Medellín",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis tincidunt tellus. Vestibulum id urna eget massa cursus tincidunt ac accumsan tellus."
   },
   {
@@ -16,9 +16,9 @@ const images = [
   {
     "id": 3,
     "photo": require("../img/Gallery/3.jpg"),
-    "title": "Imagen 3",
+    "title": "Pérgola Corrediza",
     "location": "Las Palmas, Medellín",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis tincidunt tellus. Vestibulum id urna eget massa cursus tincidunt ac accumsan tellus. Curabitur non quam in nunc tincidunt egestas rhoncus ut nibh. Quisque hendrerit ipsum quis arcu malesuada, sed vulputate sem aliquet. Sed eget congue leo, quis vestibulum velit. Nullam mollis dapibus nulla. Integer diam risus, pellentesque ac efficitur rutrum, pretium eget quam."
+    "description": "Fabricación e instalación de pérgola corrediza con módulo fijo y corredizo, para unidad residencial Casa Milano, sector las Palmas Medellin, elaborada en tubería metálica, sistema móvil en riel y cubierta en vidrio templado de 10mm."
   },
   {
     "id": 4,

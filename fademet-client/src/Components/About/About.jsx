@@ -1,23 +1,22 @@
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import "./QuienesSomos.css";
+import "./About.css";
 
-const QuienesSomos = () => {
+const About = () => {
   return (
-    <div className="somos">
+    <div className="about">
       <Navbar />
-      <section className="somos__container m-snav animate__animated animate__fadeIn">
+      <section className="about__container m-snav animate__animated animate__fadeIn">
         <div className="section-title">
           <h1>Quiénes Somos</h1>
-          <h3>Conócenos un poco más</h3>
         </div>
-        <div className="somos__content">
-          <div className="somos__text">
+        <div className="about__content">
+          <div className="about__text">
             <h3>Misión</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae asperiores architecto accusantium possimus, est autem, et perspiciatis error animi beatae excepturi. Molestiae aliquid obcaecati commodi nisi aliquam distinctio cupiditate sint.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, consequatur laborum? Consequatur labore accusantium eveniet eligendi? Alias repellendus sit saepe molestias perferendis, iure vero quo quia voluptatibus libero accusantium cupiditate at, ad, magnam incidunt! Aspernatur doloremque velit odit nihil, tempora porro quia eius? Accusantium eius nesciunt asperiores fugit enim tempora?</p>
           </div>
-          <div className="somos__text">
+          <div className="about__text">
             <h3>Visión</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae asperiores architecto accusantium possimus, est autem, et perspiciatis error animi beatae excepturi. Molestiae aliquid obcaecati commodi nisi aliquam distinctio cupiditate sint.</p>
           </div>
@@ -28,4 +27,4 @@ const QuienesSomos = () => {
   )
 }
 
-export default QuienesSomos;
+export default About;
