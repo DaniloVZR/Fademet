@@ -6,33 +6,37 @@ import "./Navbar.css";
 const Navbar = ({ isModalOpen }) => {
   const [toggle, setToggle] = useState(false);
 
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <nav className={`nv-z ${isModalOpen ? "modal-open" : ""}`}>
       <div className="navbar nav-default">
-        <Link to='/'>
+        <Link onClick={handleClick} to='/'>
           <Logo />
         </Link>
         <div className="navbar-options">
-          <Link to='/'>
+          <Link onClick={handleClick} to='/'>
             <button className="button">Inicio</button>
           </Link>
-          <Link to='/Proyectos'>
+          <Link onClick={handleClick} to='/Proyectos'>
             <button className="button">Proyectos</button>
           </Link>
-          <Link to='/Galería'>
+          <Link onClick={handleClick} to='/Galería'>
             <button className="button">Galería</button>
           </Link>
-          <Link to='/QuienesSomos'>
+          <Link onClick={handleClick} to='/QuienesSomos'>
             <button className="button">Nosotros</button>
           </Link>
-          <Link to='/Contactanos'>
+          <Link onClick={handleClick} to='/Contactanos'>
             <button className="button">Contáctanos</button>
           </Link>
         </div>
       </div>
 
       <div className="navbar nav-mobile">
-        <Link to='/'>
+        <Link onClick={handleClick} to='/'>
           <Logo />
         </Link>
         <div className="nav-menu-option" onClick={() => setToggle(!toggle)}>
@@ -44,19 +48,19 @@ const Navbar = ({ isModalOpen }) => {
         toggle ?
           <div className="menu-mobile animate__animated animate__slideInRight">
             <i onClick={() => setToggle(!toggle)} className="fa-solid fa-x mobile-x-btn" />
-            <Link className="mobile-btn" to='/'>
+            <Link onClick={handleClick} className="mobile-btn" to='/'>
               Inicio
             </Link>
-            <Link className="mobile-btn" to='/Proyectos'>
+            <Link onClick={handleClick} className="mobile-btn" to='/Proyectos'>
               Proyectos
             </Link>
-            <Link className="mobile-btn" to='/Galería'>
+            <Link onClick={handleClick} className="mobile-btn" to='/Galería'>
               Galería
             </Link>
-            <Link className="mobile-btn" to='/QuienesSomos'>
+            <Link onClick={handleClick} className="mobile-btn" to='/QuienesSomos'>
               Nosotros
             </Link>
-            <Link className="mobile-btn" to='/Contactanos'>
+            <Link onClick={handleClick} className="mobile-btn" to='/Contactanos'>
               Contáctanos
             </Link>
           </div> : null
