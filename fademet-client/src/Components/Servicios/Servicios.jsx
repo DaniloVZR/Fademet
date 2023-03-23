@@ -4,7 +4,8 @@ import "./Servicios.css";
 const Servicios = () => {
   return (
     <section className="servicios" id="servicios">
-      <div className="servicios__photo" />
+      <div className="servicios__photo">
+      </div>
       <div className="servicios-container">
         <div className="section-title">
           <h1>Nuestros Servicios</h1>
