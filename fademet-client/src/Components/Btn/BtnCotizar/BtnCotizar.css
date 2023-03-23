@@ -1,0 +1,34 @@
+.btn-cotiza {
+  padding: 17px 35px;
+  border: 3px double black;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 15px;
+  transition: all .5s ease;
+}
+
+.btn-cotiza:hover {
+  letter-spacing: 3px;
+  background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(220, 99, 24) 0px 7px 29px 0px;
+}
+
+.btn-cotiza:active {
+  letter-spacing: 3px;
+  background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(220, 99, 24) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+@media (max-width: 1000px) {
+  .btn-cotiza {
+    transform: scale(.8);
+  }
+}
