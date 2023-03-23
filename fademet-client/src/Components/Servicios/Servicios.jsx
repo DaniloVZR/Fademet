@@ -1,10 +1,23 @@
 import servicesList from "../../utils/Services";
+import BtnCotizar from "../Btn/BtnCotizar/BtnCotizar";
 import "./Servicios.css";
 
 const Servicios = () => {
   return (
     <section className="servicios" id="servicios">
       <div className="servicios__photo">
+        <div className="servicios__photo-overlay">
+          <div className="servicios__photo-text">
+            <h1>
+              Diseño,<br />
+              fabricación <br />
+              y montaje <br />
+              de estructuras <br />
+              metálicas.
+            </h1>
+            <BtnCotizar />
+          </div>
+        </div>
       </div>
       <div className="servicios-container">
         <div className="section-title">
