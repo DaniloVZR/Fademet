@@ -12,7 +12,7 @@ function Proyecto_id() {
   return (
     <div className='proyecto_id'>
       <Navbar />
-      <Link className='Back-btn' to="/Proyectos">
+      <Link className='Back-btn' to="/">
         <i className="fa-solid fa-arrow-left" />&nbsp;
         Volver
       </Link>

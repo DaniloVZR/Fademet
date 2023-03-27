@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Inicio />} />
-        <Route exact path="/Proyectos" element={<Proyectos />} />
+        {/* <Route exact path="/Proyectos" element={<Proyectos />} /> */}
         <Route exact path="/Proyectos/:id" element={<Proyecto_id />} />
         <Route exact path="/Galería" element={<Gallery />} />
         <Route exact path="/About" element={<About />} />
