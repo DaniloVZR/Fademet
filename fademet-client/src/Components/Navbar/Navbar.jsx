@@ -29,7 +29,9 @@ const Navbar = ({ isModalOpen }) => {
           <Link onClick={handleClick} to='/Galería'>
             <button className="button">Galería</button>
           </Link>
-          <Link onClick={handleClick} to='/About'>
+          <Link
+            onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })}
+            to='/'>
             <button className="button">Nosotros</button>
           </Link>
           <Link onClick={handleClick} to='/Contactanos'>
@@ -56,13 +58,17 @@ const Navbar = ({ isModalOpen }) => {
             </Link>
             <Link
               onClick={() => document.getElementById("ProjHome").scrollIntoView({ behavior: "smooth" })}
+              to='/'
               className="mobile-btn" >
               Proyectos
             </Link>
             <Link onClick={handleClick} className="mobile-btn" to='/Galería'>
               Galería
             </Link>
-            <Link onClick={handleClick} className="mobile-btn" to='/About'>
+            <Link
+              onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })}
+              to='/'
+              className="mobile-btn">
               Nosotros
             </Link>
             <Link onClick={handleClick} className="mobile-btn" to='/Contactanos'>

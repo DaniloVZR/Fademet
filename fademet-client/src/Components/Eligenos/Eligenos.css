@@ -55,14 +55,27 @@
 /* PHOTO ELIGENOS SECTION */
 
 .eligenos__photo {
-  background-image: url(../../img/Gallery//8.jpg);
+  /* background-image: url(../../img/Gallery//8.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: blur(1px); */
+  position: relative;
+}
+
+.eligenos__photo::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../img/Gallery//8.jpg);
+  background-size: cover;
+  filter: blur(1px);
 }
 
 .eligenos__photo-overlay {
   background-color: rgba(0, 0, 0, 0.701);
+  z-index: 1;
   position: relative;
   width: 100%;
   height: 100%;
