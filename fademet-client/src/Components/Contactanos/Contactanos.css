@@ -3,7 +3,7 @@
 }
 
 .Contactanos__container {
-  padding: 2rem 0;
+  padding: 4rem 2rem;
   height: max-content;
 }
 
@@ -15,11 +15,17 @@
 }
 
 .contactanos__medios {
+  width: 40%;
   margin-top: 3rem;
+}
+
+.contactanos__medios>p {
+  font-size: 25px;
 }
 
 .contactanos__medios-celrs {
   display: flex;
+  font-size: 20px;
   flex-direction: column;
   margin-top: 2rem;
   gap: 2rem;
@@ -114,6 +120,7 @@
   }
 
   .contactanos__medios {
+    width: 100%;
     margin: 0;
   }
 

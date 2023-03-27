@@ -21,6 +21,7 @@ const Inicio = () => {
       <ProjHome />
       <Servicios />
       <About />
+      <Contactanos />
       <Footer />
     </div>
 
