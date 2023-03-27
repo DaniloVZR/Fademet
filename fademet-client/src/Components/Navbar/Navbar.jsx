@@ -34,7 +34,9 @@ const Navbar = ({ isModalOpen }) => {
             to='/'>
             <button className="button">Nosotros</button>
           </Link>
-          <Link onClick={handleClick} to='/Contactanos'>
+          <Link
+            onClick={() => document.getElementById("contactanos").scrollIntoView({ behavior: "smooth" })}
+            to='/'>
             <button className="button">Contáctanos</button>
           </Link>
         </div>
@@ -71,7 +73,9 @@ const Navbar = ({ isModalOpen }) => {
               className="mobile-btn">
               Nosotros
             </Link>
-            <Link onClick={handleClick} className="mobile-btn" to='/Contactanos'>
+            <Link onClick={() => document.getElementById("contactanos").scrollIntoView({ behavior: "smooth" })}
+              to='/'
+              className="mobile-btn">
               Contáctanos
             </Link>
           </div> : null
