@@ -13,6 +13,7 @@ const Eligenos = () => {
           <p><i class="fa-sharp fa-solid fa-star fa-beat" />&nbsp; Precios competitivos y atención al cliente excepcional.</p>
         </div >
       </div >
+
       <div className="eligenos__photo">
         <div className="eligenos__photo-overlay">
           <div className="eligenos__photo-text">

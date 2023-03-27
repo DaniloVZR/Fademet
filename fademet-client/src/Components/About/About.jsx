@@ -1,29 +1,27 @@
-import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer/Footer";
 import "./About.css";
 
 const About = () => {
   return (
-    <div className="about">
-      <Navbar />
-      <section className="about__container m-snav animate__animated animate__fadeIn">
-        <div className="section-title">
-          <h1>Quiénes Somos</h1>
-        </div>
-        <div className="about__content">
-          <div className="about__text">
-            <h3>Misión</h3>
+    <section className="about" id="about">
+      <div className="about__container">
+        <div className="about__mv">
+          <div className="section-title">
+            <h1>Misión <i className="fa-regular fa-compass"></i></h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae asperiores architecto accusantium possimus, est autem, et perspiciatis error animi beatae excepturi. Molestiae aliquid obcaecati commodi nisi aliquam distinctio cupiditate sint.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, consequatur laborum? Consequatur labore accusantium eveniet eligendi? Alias repellendus sit saepe molestias perferendis, iure vero quo quia voluptatibus libero accusantium cupiditate at, ad, magnam incidunt! Aspernatur doloremque velit odit nihil, tempora porro quia eius? Accusantium eius nesciunt asperiores fugit enim tempora?</p>
           </div>
-          <div className="about__text">
-            <h3>Visión</h3>
+          <div className="section-title">
+            <h1>Visión <i className="fa-sharp fa-regular fa-eye"></i></h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae asperiores architecto accusantium possimus, est autem, et perspiciatis error animi beatae excepturi. Molestiae aliquid obcaecati commodi nisi aliquam distinctio cupiditate sint.</p>
           </div>
         </div>
-      </section>
-      <Footer />
-    </div>
+        <div className="about__valores">
+          <div className="section-title">
+            <h1>Valores <i className="fa-sharp fa-regular fa-heart"></i></h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae asperiores architecto accusantium possimus, est autem, et perspiciatis error animi beatae excepturi. Molestiae aliquid obcaecati commodi nisi aliquam distinctio cupiditate sint.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }
 
