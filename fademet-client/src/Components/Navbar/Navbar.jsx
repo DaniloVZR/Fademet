@@ -20,7 +20,10 @@ const Navbar = ({ isModalOpen }) => {
           <Link onClick={handleClick} to='/'>
             <button className="button">Inicio</button>
           </Link>
-          <Link onClick={handleClick} to='/Proyectos'>
+          <Link
+            onClick={() => document.getElementById("ProjHome").scrollIntoView({ behavior: "smooth" })}
+            to='/'
+          >
             <button className="button">Proyectos</button>
           </Link>
           <Link onClick={handleClick} to='/Galería'>
@@ -51,7 +54,9 @@ const Navbar = ({ isModalOpen }) => {
             <Link onClick={handleClick} className="mobile-btn" to='/'>
               Inicio
             </Link>
-            <Link onClick={handleClick} className="mobile-btn" to='/Proyectos'>
+            <Link
+              onClick={() => document.getElementById("ProjHome").scrollIntoView({ behavior: "smooth" })}
+              className="mobile-btn" >
               Proyectos
             </Link>
             <Link onClick={handleClick} className="mobile-btn" to='/Galería'>

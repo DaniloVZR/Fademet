@@ -4,6 +4,56 @@
   grid-template-columns: 50% 50%;
 }
 
+.eligenos__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+  --s: 50px;
+  --c: #efefef;
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #ffffff00 66%, #d9d9d9 68% 70%, #ffffff00 72%;
+  background:
+    radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s)/var(--_s),
+    radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s)/var(--_s),
+    radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0/var(--_s),
+    radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0/var(--_s),
+    repeating-conic-gradient(var(--c) 0 25%, #0000 0 50%) 0 0/var(--_s),
+    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+  background-attachment: fixed;
+}
+
+.eligenos__panels {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 3rem;
+}
+
+.eligenos__panels>p {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  background-color: rgb(18, 18, 18);
+  padding: 1rem 2rem;
+  transition: .6s;
+  box-shadow:
+    rgba(229, 97, 26, 0.4) 5px 5px,
+    rgba(232, 144, 29, 0.3) 10px 10px,
+    rgba(237, 122, 34, 0.2) 15px 15px,
+    rgba(230, 72, 24, 0.1) 20px 20px,
+    rgba(226, 101, 23, 0.05) 25px 25px;
+}
+
+.eligenos__panels>p:hover {
+  border-radius: 2rem 0 2rem 0;
+  transform: scale(1.05);
+}
+
+
+/* PHOTO ELIGENOS SECTION */
+
 .eligenos__photo {
   background-image: url(../../img/Gallery//8.jpg);
   background-position: center;
@@ -25,22 +75,6 @@
   align-items: center;
   height: 100%;
 }
-
-.eligenos__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3rem 0;
-}
-
-.eligenos__panels {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  margin: 3rem;
-}
-
-/* PHOTO ELIGENOS SECTION */
 
 .eligenos__photo-text {
   display: grid;
@@ -78,5 +112,19 @@
 
   .eligenos__photo-text {
     padding: 4rem 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .eligenos__element>i {
+    font-size: 30px;
+  }
+
+  .eligenos__element>h4 {
+    font-size: 18px;
+  }
+
+  .eligenos__element>p {
+    font-size: 14px;
   }
 }
