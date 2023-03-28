@@ -10,7 +10,7 @@ const Logo = () => {
           onMouseOut={(e) => e.currentTarget.classList.remove("fa-spin")}
           className="navbar-logo__img" src={logo} alt="Logo" />
       </div>
-      <h1 className="navbar-logo__text">FADEMET</h1>
+      <h1 className="navbar-logo__text"><span>FADE</span>MET</h1>
     </div>
   )
 }

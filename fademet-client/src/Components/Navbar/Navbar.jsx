@@ -17,27 +17,30 @@ const Navbar = ({ isModalOpen }) => {
           <Logo />
         </Link>
         <div className="navbar-options">
-          <Link onClick={handleClick} to='/'>
-            <button className="button">Inicio</button>
+          <Link onClick={handleClick} to='/' className="btn-nav">
+            Inicio
           </Link>
           <Link
             onClick={() => document.getElementById("ProjHome").scrollIntoView({ behavior: "smooth" })}
             to='/'
+            className="btn-nav"
           >
-            <button className="button">Proyectos</button>
+            Proyectos
           </Link>
-          <Link onClick={handleClick} to='/Galería'>
-            <button className="button">Galería</button>
+          <Link onClick={handleClick} to='/Galería' className="btn-nav">
+            Galería
           </Link>
           <Link
             onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })}
-            to='/'>
-            <button className="button">Nosotros</button>
+            to='/'
+            className="btn-nav">
+            Nosotros
           </Link>
           <Link
             onClick={() => document.getElementById("contactanos").scrollIntoView({ behavior: "smooth" })}
-            to='/'>
-            <button className="button">Contáctanos</button>
+            to='/'
+            className="btn-nav">
+            Contáctanos
           </Link>
         </div>
       </div>
@@ -53,7 +56,7 @@ const Navbar = ({ isModalOpen }) => {
 
       {
         toggle ?
-          <div className="menu-mobile animate__animated animate__slideInRight">
+          <div className="menu-mobile animate__animated animate__slideInDown">
             <i onClick={() => setToggle(!toggle)} className="fa-solid fa-x mobile-x-btn" />
             <Link onClick={handleClick} className="mobile-btn" to='/'>
               Inicio
