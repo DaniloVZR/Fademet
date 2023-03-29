@@ -9,23 +9,17 @@ h6 {
 }
 
 .inicio {
-  display: flex;
-  flex-direction: column;
   background-color: #dfdfdf;
 }
 
 .inicio__home {
-  margin-top: 90px;
   position: relative;
-  display: flex;
-  height: 90vh;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 20px, rgba(0, 0, 0, 0.5) 0px 6px 6px;
 }
 
-@media (max-width: 1050px) {
-  .inicio__home {
-    flex-direction: column;
-  }
+.inicio__header {
+  width: 50%;
 }
 
 .inicio-container {

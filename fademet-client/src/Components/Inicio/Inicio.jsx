@@ -6,17 +6,19 @@ import Servicios from "../Servicios/Servicios";
 import About from "../About/About";
 import Contactanos from "../Contactanos/Contactanos";
 import Footer from "../Footer/Footer";
-import Description from "./Description/Description";
+import Header from "./Description/Description";
 import "./Inicio.css";
 
 const Inicio = () => {
   return (
     <div className="inicio">
       <Navbar />
-      <main className="inicio__home">
+      <header className="inicio__home m-snav">
         <Carousel />
-        <Description />
-      </main>
+        <div className="inicio__header">
+          <Header />
+        </div>
+      </header>
       <Eligenos />
       <ProjHome />
       <Servicios />
