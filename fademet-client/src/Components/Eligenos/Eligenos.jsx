@@ -8,9 +8,9 @@ const Eligenos = () => {
           <h1>¿Por qué Elegirnos?</h1>
         </div>
         <div className="eligenos__panels">
-          <p><i class="fa-sharp fa-solid fa-star fa-beat" />&nbsp; Experiencia y compromiso con la calidad en cada proyecto.</p>
-          <p><i class="fa-sharp fa-solid fa-star fa-beat" />&nbsp; Soluciones personalizadas para satisfacer las necesidades únicas de cada cliente.</p>
-          <p><i class="fa-sharp fa-solid fa-star fa-beat" />&nbsp; Precios competitivos y atención al cliente excepcional.</p>
+          <p><i className="fa-sharp fa-solid fa-star fa-beat" />&nbsp; Experiencia y compromiso con la calidad en cada proyecto.</p>
+          <p><i className="fa-sharp fa-solid fa-star fa-beat" />&nbsp; Soluciones personalizadas para satisfacer las necesidades únicas de cada cliente.</p>
+          <p><i className="fa-sharp fa-solid fa-star fa-beat" />&nbsp; Precios competitivos y atención al cliente excepcional.</p>
         </div >
       </div >
 
