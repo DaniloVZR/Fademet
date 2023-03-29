@@ -1,23 +1,17 @@
 .Carousel {
-  width: 60vw;
-  margin: 0;
-}
-
-.Carousel-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-@media (max-width: 1050px) {
-  .Carousel {
-    height: 45vh;
-    width: 100%;
-  }
+  position: relative;
+  height: calc(100vh - 90px);
 }
 
 @media (max-width: 768px) {
   .Carousel {
-    height: 70vh;
+    height: calc(100vh - 70px);
   }
+}
+
+.Carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.75);
 }
