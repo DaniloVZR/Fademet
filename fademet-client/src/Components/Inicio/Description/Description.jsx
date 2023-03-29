@@ -12,10 +12,18 @@ const Description = () => {
       </div>
       <div className="desc__info-btn animate__animated animate__fadeInLeft">
         <button
-          onClick={() => document.getElementById("eligenos").scrollIntoView({ behavior: "smooth" })}
+          onClick={() => {
+            const aboutElement = document.getElementById("eligenos");
+            const offsetTop = aboutElement.offsetTop - 90;
+            window.scrollTo({ top: offsetTop, behavior: "smooth" });
+          }}
           className="btn-desc">¿Por qué Elegirnos?</button>
         <button
-          onClick={() => document.getElementById("servicios").scrollIntoView({ behavior: "smooth" })}
+          onClick={() => {
+            const aboutElement = document.getElementById("servicios");
+            const offsetTop = aboutElement.offsetTop - 90;
+            window.scrollTo({ top: offsetTop, behavior: "smooth" });
+          }}
           className="btn-desc">Nuestros Servicios</button>
         <BtnCotizar />
       </div>

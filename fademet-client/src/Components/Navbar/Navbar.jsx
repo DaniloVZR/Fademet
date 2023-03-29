@@ -21,7 +21,13 @@ const Navbar = ({ isModalOpen }) => {
             Inicio
           </Link>
           <Link
-            onClick={() => document.getElementById("ProjHome").scrollIntoView({ behavior: "smooth" })}
+            onClick={() => {
+              setTimeout(() => {
+                const aboutElement = document.getElementById("ProjHome");
+                const offsetTop = aboutElement.offsetTop - 90;
+                window.scrollTo({ top: offsetTop, behavior: "smooth" });
+              }, 100);
+            }}
             to='/'
             className="btn-nav"
           >
@@ -31,13 +37,25 @@ const Navbar = ({ isModalOpen }) => {
             Galería
           </Link>
           <Link
-            onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })}
+            onClick={() => {
+              setTimeout(() => {
+                const aboutElement = document.getElementById("about");
+                const offsetTop = aboutElement.offsetTop - 90;
+                window.scrollTo({ top: offsetTop, behavior: "smooth" });
+              }, 100);
+            }}
             to='/'
             className="btn-nav">
             Nosotros
           </Link>
           <Link
-            onClick={() => document.getElementById("contactanos").scrollIntoView({ behavior: "smooth" })}
+            onClick={() => {
+              setTimeout(() => {
+                const aboutElement = document.getElementById("contactanos");
+                const offsetTop = aboutElement.offsetTop - 90;
+                window.scrollTo({ top: offsetTop, behavior: "smooth" });
+              }, 100);
+            }}
             to='/'
             className="btn-nav">
             Contáctanos
@@ -58,11 +76,19 @@ const Navbar = ({ isModalOpen }) => {
         toggle ?
           <div className="menu-mobile animate__animated animate__slideInDown">
             <i onClick={() => setToggle(!toggle)} className="fa-solid fa-x mobile-x-btn" />
-            <Link onClick={handleClick} className="mobile-btn" to='/'>
+            <Link
+              onClick={() => { handleClick(); setToggle(!toggle) }} className="mobile-btn" to='/'>
               Inicio
             </Link>
             <Link
-              onClick={() => document.getElementById("ProjHome").scrollIntoView({ behavior: "smooth" })}
+              onClick={() => {
+                setTimeout(() => {
+                  const aboutElement = document.getElementById("ProjHome");
+                  const offsetTop = aboutElement.offsetTop - 70;
+                  window.scrollTo({ top: offsetTop, behavior: "smooth" })
+                  setToggle(!toggle);
+                }, 100);
+              }}
               to='/'
               className="mobile-btn" >
               Proyectos
@@ -71,12 +97,27 @@ const Navbar = ({ isModalOpen }) => {
               Galería
             </Link>
             <Link
-              onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })}
+              onClick={() => {
+                setTimeout(() => {
+                  const aboutElement = document.getElementById("about");
+                  const offsetTop = aboutElement.offsetTop - 70;
+                  window.scrollTo({ top: offsetTop, behavior: "smooth" })
+                  setToggle(!toggle);
+                }, 100);
+              }}
               to='/'
               className="mobile-btn">
               Nosotros
             </Link>
-            <Link onClick={() => document.getElementById("contactanos").scrollIntoView({ behavior: "smooth" })}
+            <Link
+              onClick={() => {
+                setTimeout(() => {
+                  const aboutElement = document.getElementById("contactanos");
+                  const offsetTop = aboutElement.offsetTop - 90;
+                  window.scrollTo({ top: offsetTop, behavior: "smooth" })
+                  setToggle(!toggle);
+                }, 100);
+              }}
               to='/'
               className="mobile-btn">
               Contáctanos
