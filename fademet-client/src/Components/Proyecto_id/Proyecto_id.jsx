@@ -1,13 +1,24 @@
 import React from 'react';
 import Navbar from "../Navbar/Navbar"
 import Footer from "../Footer/Footer";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import images from "../../utils/images";
 import "./Proyecto_id.css";
 
 function Proyecto_id() {
   const { id } = useParams();
   const image = images.find((e) => e.id === Number(id));
+  const navigate = useNavigate();
+
+  const projectBefore = () => {
+    const newId = Number(id) - 1;
+    navigate(`/Proyectos/${newId}`);
+  }
+
+  const projectNext = () => {
+    const newId = Number(id) + 1;
+    navigate(`/Proyectos/${newId}`);
+  }
 
   return (
     <div className='proyecto_id'>
@@ -17,7 +28,24 @@ function Proyecto_id() {
         Volver
       </Link>
 
+      <button
+        className='Proj-btn PB-left'
+        onClick={projectBefore}
+        disabled={id === "1" ? true : false}
+      >
+        <i className="fa-solid fa-arrow-left" />
+      </button>
+
+      <button
+        className='Proj-btn PB-right'
+        onClick={projectNext}
+        disabled={id === "3" ? true : false}
+      >
+        <i className="fa-solid fa-arrow-right" />
+      </button>
+
       <section className='proyecto_id__container m-snav animate__animated animate__fadeIn'>
+
         <div className='project__info'>
           <img src={image.photo} alt="" />
           <div className='project__info-desc'>
@@ -35,6 +63,7 @@ function Proyecto_id() {
             </div>
           </div>
         </div>
+
       </section>
       <Footer />
     </div>
