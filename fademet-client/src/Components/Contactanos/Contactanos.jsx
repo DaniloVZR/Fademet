@@ -20,10 +20,10 @@ const Contactanos = () => {
               </div>
               <div className="contactanos-social">
                 <a href="https://api.whatsapp.com/send/?phone=573147561960&text&type=phone_number&app_absent=0" target="_blank" className="footer-social__wpp">
-                  <i className="fa-brands fa-whatsapp fa-3x contact-icon wpp"></i>
+                  <i className="fa-brands fa-whatsapp fa-2x contact-icon wpp"></i>
                 </a>
                 <a href="https://www.instagram.com/fademetmontajes/?hl=es" target="_blank" className="footer-social__ig">
-                  <i className="fa-brands fa-instagram fa-3x contact-icon ig"></i>
+                  <i className="fa-brands fa-instagram fa-2x contact-icon ig"></i>
                 </a>
               </div>
             </div>

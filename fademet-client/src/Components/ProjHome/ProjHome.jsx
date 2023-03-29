@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import "./ProjHome.css";
 
 function ProjHome() {
-
   const handleClick = () => {
     window.scrollTo(0, 0);
   };
