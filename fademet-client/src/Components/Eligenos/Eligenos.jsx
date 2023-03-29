@@ -16,10 +16,10 @@ const Eligenos = () => {
         <div className="section-title">
           <h1>¿Por qué Elegirnos?</h1>
         </div>
-        <div className="eligenos__panels">
-          <p data-aos="fade-up"><i className="fa-sharp fa-solid fa-star fa-beat" />&nbsp; Experiencia y compromiso con la calidad en cada proyecto.</p>
-          <p data-aos="fade-up"><i className="fa-sharp fa-solid fa-star fa-beat" />&nbsp; Soluciones personalizadas para satisfacer las necesidades únicas de cada cliente.</p>
-          <p data-aos="fade-up"><i className="fa-sharp fa-solid fa-star fa-beat" />&nbsp; Precios competitivos y atención al cliente excepcional.</p>
+        <div className="eligenos__panels" data-aos="fade-up">
+          <p className='eligenos__panels-element'><i className="fa-sharp fa-solid fa-star fa-beat" />&nbsp; Experiencia y compromiso con la calidad en cada proyecto.</p>
+          <p className='eligenos__panels-element'><i className="fa-sharp fa-solid fa-star fa-beat" />&nbsp; Soluciones personalizadas para satisfacer las necesidades únicas de cada cliente.</p>
+          <p className='eligenos__panels-element'><i className="fa-sharp fa-solid fa-star fa-beat" />&nbsp; Precios competitivos y atención al cliente excepcional.</p>
         </div >
       </div >
 

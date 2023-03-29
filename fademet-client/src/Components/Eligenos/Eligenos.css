@@ -31,13 +31,13 @@
   margin: 3rem;
 }
 
-.eligenos__panels>p {
+.eligenos__panels-element {
   color: white;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 20px;
   background-color: rgb(18, 18, 18);
   padding: 1rem 2rem;
-  transition: .6s;
+  transition: .6s ease;
   box-shadow:
     rgba(229, 97, 26, 0.4) 5px 5px,
     rgba(232, 144, 29, 0.3) 10px 10px,
@@ -46,7 +46,7 @@
     rgba(226, 101, 23, 0.05) 25px 25px;
 }
 
-.eligenos__panels>p:hover {
+.eligenos__panels-element:hover {
   border-radius: 2rem 0 2rem 0;
   transform: scale(1.05);
 }
